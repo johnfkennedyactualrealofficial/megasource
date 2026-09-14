@@ -45,3 +45,8 @@ jobs:
             build/Release/*.dll
             build/bin/Release/*.dll
             build/libs/love/Release/*.dll
+      - name: Locate compiled DLLs
+        shell: pwsh
+        run: |
+          Get-ChildItem -Path build -Filter "*.dll" -Recurse | Select-Object -ExpandProperty FullName
+
