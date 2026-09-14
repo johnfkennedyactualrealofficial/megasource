@@ -23,7 +23,7 @@ jobs:
 
       - name: Configure CMake
         run: |
-          cmake -B build -S . "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+          cmake -B build -S . "-DCMAKE_POLICY_VERSION_MINIMUM=3.5" -- /verbosity:minimal
 
       - name: Build Shared Library (love.dll)
         run: |
