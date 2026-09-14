@@ -19,7 +19,7 @@ jobs:
         with:
           repository: johnfkennedyactualrealofficial/love
           path: libs/love
-          ref: main  # Change to your LÖVE branch or tag
+          ref: 11.x  # Change to your LÖVE branch or tag
 
       - name: Configure CMake
         run: |
