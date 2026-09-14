@@ -21,6 +21,9 @@ jobs:
           path: libs/love
           ref: 11.x  # Change to your LÖVE branch or tag
 
+      - name: Set up MSVC Developer Command Prompt
+        uses: ilammy/msvc-dev-cmd@v1
+
       - name: Setup CMake 3.29
         uses: jwlawson/actions-setup-cmake@v2
         with:
