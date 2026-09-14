@@ -11,6 +11,17 @@ project(megasource)
 
 set(MEGA TRUE)
 
+include(FetchContent)
+
+FetchContent_Declare(
+    love
+    GIT_REPOSITORY https://github.com/johnfkennedyactualrealoffical/love.git
+    GIT_TAG        main # Or a specific tag/commit hash
+    SOURCE_DIR     ${CMAKE_CURRENT_SOURCE_DIR}/libs/love
+)
+
+FetchContent_MakeAvailable(love)
+
 set (CMAKE_CXX_STANDARD 11)
 
 if(CMAKE_SIZEOF_VOID_P EQUAL 8)
