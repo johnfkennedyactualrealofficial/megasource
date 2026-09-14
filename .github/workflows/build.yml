@@ -42,10 +42,8 @@ jobs:
         with:
           name: love-windows-dll-${{ matrix.platform }}
           path: |
-            build/Release/*.dll
-            build/bin/Release/*.dll
-            build/libs/love/Release/*.dll
-            megasource/build/love/*.dll
+            build/love/*.dll
+
       - name: Locate compiled DLLs
         shell: pwsh
         run: |
