@@ -13,15 +13,6 @@ set(MEGA TRUE)
 
 option(LOVE_USE_SDL3 "Use SDL3 instead of SDL2" ON)
 
-include(FetchContent)
-
-FetchContent_Declare(
-    love
-    GIT_REPOSITORY https://github.com/johnfkennedyactualrealofficial/love.git
-    GIT_TAG        main
-    SOURCE_DIR     ${CMAKE_CURRENT_SOURCE_DIR}/libs/love
-)
-
 set (CMAKE_CXX_STANDARD 11)
 
 if(CMAKE_SIZEOF_VOID_P EQUAL 8)
